@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="cocina"
+      content="cocina para inutiles"
+    />
+    <meta
+      name="keywords"
+      content="recetas, cocina, facil, rapido, independizar, independiente, inutil"
+    />
+    <meta name="adrian" content="cocina" />
+    <title>Recetario de cocina facil</title>
+  </head>
+  <body>
+    <header>Bienvenido a cocina para inutiles, te espera un mundo por descubrir</header>
+    <main>
+      <section>
+        <h1>¿Qué vas a encontrar aquí?</h1>
+        <p>
+          Vamos a empezar con algunas recetas faciles de hacer <strong>si te acabas de independizar, no tienes tiempo para cocinar o si no
+            tienes ganas de cocinar pero quieres sobrevivir</strong>
+        </p>
+        <p>Una vez dejes de ser un inútil, pasaremos al nivel medio y experto para que impresiones a tus invitados</p>
+        <!--Imagen a traves de hipervinculo para practicar, el resto de imagenes (tabla de abajo) están alojadas en el host-->
+        <img 
+          src="https://st2.depositphotos.com/2631505/8588/i/450/depositphotos_85887674-stock-photo-funny-man-holding-pan-with.jpg/"
+          alt="cocinero pidiendo ayuda"
+          title="Cocinero pidiendo ayuda"
+          loading="auto"
+          width="500"
+          border="5"
+        />
+      </section><br>
+      <div>
+        <h2>Nuestras recetas estrella</h2>
+        <h3>Nivel supervivencia</h3>
+        <p>Recetas que prepararás en menos de 5 minutos</p>
+        <table border="1"><!--De momento los hipervinvulos llevan directamente a youtube, en un futuro llevarán a otra pagina en la que poder visualizar el video directamente y aparezcan las cantidades y tiempos de preparacion-->
+          <!--Tambien la idea es que al pinchar sobre la imagen te redirija a la pagina mencionada-->
+              <tr>
+                  <th>Imagen</th>
+                  <th>Comida</th>
+              </tr>
+              <tr>
+                  <td><img
+                    src="cereales.png"
+                    alt="imagen de creales"
+                    title="imagen de creales"
+                    loading="auto"
+                    width="150"
+                  /></td>
+                  <td align="center"><a href="https://www.youtube.com/watch?v=f45GgrvG_VY">Cereales con leche</a></td>
+              </tr>
+              <tr>
+                  <td><img
+                    src="tortilla.png"
+                    alt="imagen de tortilla francesa"
+                    title="imagen de tortilla francesa"
+                    loading="auto"
+                    width="150"
+                  /></td>
+                  <td><a href="https://www.youtube.com/watch?v=f45GgrvG_VY">Tortilla A la francesa,<small> no te flipes aun</small></a></td>
+              </tr>
+              <td><img
+                src="mixto.png"
+                alt="imagen de sandwich mixto"
+                title="imagen de sandwich mixto"
+                loading="auto"
+                width="150"
+              /></td>
+              <td align="center"><a href="https://www.youtube.com/watch?v=dFlx8LnAk0o">sandwich mixto</a></td>
+            </tr>
+            <td><img
+              src="sopa.png"
+              alt="imagen de sopa de sobre"
+              title="imagen de sopa de sobre"
+              loading="auto"
+              width="150"
+            /></td>
+            <td align="center"><a href="https://www.youtube.com/watch?v=YHJV3BNjClQ">sopa de sobre</a></td>
+          </tr>
+          </tbody>
+      </table>
+        <p><!--Te dejo varios formatos, para que veas que conozco las etiquetas, en un futuro si seguimos sobre esta web pondré el formato tabla - imagen como arriba-->
+          Si crees que estas recetas se te quedan cortas te animo a pasar al siguiente nivel
+        </p>
+        <h3>Recetas nivel medio</h3>
+        <nav>
+          <ol>
+            <li>
+              <a href="https://www.youtube.com/watch?v=sRPtI-pJddA">Macarrones con tomate</a
+              >
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=mPPRfsZt1J4">Filete con patatas</a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=pvlkYYdIBV0">Tortilla de patatas</a>
+          </ol>
+        </nav>
+      </div>
+      <h1>¿Quieres que contactemos contigo?</h1><!--FORMULARIO DE REGISTRO-->
+          <form style="border: 1px solid; action="send_email.php" method="POST"><!--es necesario tener un servidor para que funcione-->
+        <!-- introducir nombre -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          <br><br>
+        <!-- introducir correo electrónico -->
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+         <br><br>
+        <!-- seleccionar la receta -->
+            <label for="Receta que quieres">Receta que quieres:</label>
+            <input type="Receta que quieres" id="Receta que quieres" name="Receta que quieres" required>
+         <br><br>
+        <!-- seleccionar nivel -->
+          <label for="Nivel">Nivel:</label>
+            <select id="Nivel" name="Nivel" required>
+              <option value="">Seleccione una opción</option>
+              <option value="Principiante">Principiante</option>
+             <option value="Medio">Medio</option>
+             <option value="Experto">Experto</option>
+           </select>
+      </form> 
+        <br><br>
+        <!-- Casillas de elegir nivel -->
+        <p>Intereses:</p>
+        <input type="checkbox" id="recetas faciles" name="recetas medias" value="recetas experto">
+        <label for="faciles">faciles</label>
+        <br>
+        <input type="checkbox" id="medias" name="medias" value="medias">
+        <label for="medias">medias</label>
+        <br>
+        <input type="checkbox" id="experto" name="experto" value="experto">
+        <label for="experto">experto</label>
+        <br><br>
+        <!-- consejos y comentarios -->
+        <label for="comentarios">Comentarios o consejos:</label>
+        <textarea id="<comentarios>" name="comentarios o consejos" rows="2" cols="100" placeholder="Escribe tus comentarios aquí..."></textarea>
+        <br><br>
+        <!-- Botón para enviar -->
+        <button type="submit">Enviar</button>
+        <!-- Botón para reiniciar el formulario -->
+        <button type="reset">Limpiar</button>
+    </main>
+    <footer>
+      <address><!--Mis datos personales-->
+        <p>Adrian Perez</p>
+        <p>perezdiezadrian@gmail.com</p>
+        <p>También puedes encontrarme en instagram: <a href="https://www.instagram.com/"> @Cuentafalsa123</a></p>
+        <p>Copyright 2024</p>
+      </address>
+    </footer>
+  </body>
+</html>
